@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700">
+  <rect width="600" height="700" fill="#f7f5f0"/>
+  <rect x="24" y="24" width="552" height="652" fill="none" stroke="#d9c99f" stroke-width="1"/>
+  <circle cx="300" cy="300" r="104" fill="none" stroke="#c6ab6b" stroke-width="2"/>
+  <path d="M300 220 354 300 300 380 246 300Z" fill="none" stroke="#b49452" stroke-width="3"/>
+  <path d="m270 300 30-80 30 80-30 80Z" fill="none" stroke="#d9c99f" stroke-width="1.5"/>
+  <text x="300" y="475" text-anchor="middle" fill="#292720" font-family="Georgia,serif" font-size="30" letter-spacing="5">TOLOSÁ</text>
+  <text x="300" y="518" text-anchor="middle" fill="#987b43" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">PULSOS</text>
+  <text x="300" y="573" text-anchor="middle" fill="#817b70" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">AGREGA AQUÍ LA FOTO DE LA JOYA</text>
+</svg>

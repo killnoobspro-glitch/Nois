@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Metadatos y recursos compartidos con las otras vistas. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171512">
+  <meta name="description" content="Explora la colección Tolosa en oro y plata.">
+  <title>Tienda — Tolosa Joyería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="announcement">Una pieza para recordar. Envíos a toda Colombia <span>✦</span></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Tolosá, inicio"><img class="brand-logo" src="../images/logo-tolosa.jpg" alt="Tolosá, Joyería y Relojería"></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a><a href="tienda.html" aria-current="page">Tienda</a><a href="index.html#nosotros">Nuestra esencia</a><a href="index.html#contacto">Contacto</a>
+    </nav>
+    <a class="bag-link" href="carrito.html" aria-label="Ver carrito">BOLSA <span id="contador-bolsa">0</span></a>
+  </header>
+
+  <!-- Tienda independiente con controles y catálogo de productos. -->
+  <main>
+    <section class="catalog section-wrap" id="coleccion">
+      <div class="section-heading">
+        <div><p class="eyebrow">DESCUBRE CADA DETALLE</p><h1 class="page-title">La tienda <em>Tolosá</em></h1></div>
+        <p class="section-intro">Encuentra esa pieza especial<br>para acompañar tu historia.</p>
+      </div>
+      <div class="catalog-tools">
+        <div class="filter-row" id="filtros-categoria" aria-label="Filtrar por categoría"></div>
+        <button class="favorite-filter" id="ver-favoritos" type="button" aria-pressed="false">♡ Ver favoritos</button>
+        <label class="search-box"><span>⌕</span><input id="busqueda" type="search" placeholder="Buscar una pieza…" aria-label="Buscar productos"></label>
+      </div>
+      <div class="filter-secondary">
+        <div class="select-filters">
+          <label>Metal <select id="filtro-metal"><option value="todos">Todos</option><option value="Plata">Plata</option><option value="Oro">Oro</option></select></label>
+          <label>Para <select id="filtro-publico"><option value="todos">Todos</option><option value="Dama">Dama</option><option value="Caballero">Caballero</option><option value="Unisex">Unisex</option></select></label>
+        </div>
+        <label class="sort-label">Ordenar por <select id="orden-catalogo"><option value="destacados">Destacados</option><option value="menor-precio">Menor precio</option><option value="mayor-precio">Mayor precio</option></select></label>
+      </div>
+      <p class="results-count" id="contador-resultados" aria-live="polite"></p>
+      <div class="product-grid" id="cuadrilla-productos"></div>
+      <div class="empty-state" id="estado-vacio" hidden>No encontramos piezas con esos filtros.<button id="limpiar-filtros">Ver toda la colección</button></div>
+      <div class="catalog-bottom"><span>PIEZAS SELECCIONADAS CON INTENCIÓN</span><span id="total-catalogo"></span></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer-brand" href="index.html"><span class="brand-mark">◇</span> TOLOSÁ</a>
+    <p>JOYERÍA Y RELOJERÍA</p>
+    <div class="footer-links"><a href="index.html">Inicio</a><a href="index.html#nosotros">Nuestra esencia</a><a href="index.html#contacto">Contacto</a></div>
+    <div class="footer-bottom"><span>© 2026 Tolosá. Todos los derechos reservados.</span><span>HECHO CON ELEGANCIA · COLOMBIA</span></div>
+  </footer>
+
+  <!-- Detalle de cada producto; desde aquí se agrega al carrito. -->
+  <dialog id="dialogo-producto" class="product-dialog" aria-label="Detalle del producto">
+    <button class="dialog-close" aria-label="Cerrar">×</button>
+    <div id="contenido-dialogo"></div>
+  </dialog>
+  
+  <!-- Accesos rápidos persistentes en las tres vistas del sitio. -->
+  <nav class="floating-actions" aria-label="Accesos rápidos">
+    <a class="floating-action floating-cart" href="carrito.html" aria-label="Abrir carrito"><span aria-hidden="true">🛍</span><span class="floating-cart-count">0</span></a>
+    <a class="floating-action floating-whatsapp" href="https://wa.me/573169106870" target="_blank" rel="noreferrer" aria-label="Escribir por WhatsApp"><img src="../images/whatsapp.svg" alt=""></a>
+  </nav>
+  <script type="module" src="../js/catalogo.js"></script>
+</body>
+</html>
+

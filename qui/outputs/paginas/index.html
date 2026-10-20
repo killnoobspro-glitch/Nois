@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Metadatos de la portada y recursos visuales compartidos. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171512">
+  <meta name="description" content="Tolosá Joyería y Relojería. Joyas seleccionadas en oro y plata.">
+  <title>Tolosá — Joyería &amp; Relojería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="announcement">Una pieza para recordar. Envíos a toda Colombia <span>✦</span></div>
+
+  <!-- Navegación compartida entre portada, tienda y carrito. -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Tolosá, inicio"><img class="brand-logo" src="../images/logo-tolosa.jpg" alt="Tolosá, Joyería y Relojería"></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a><a href="tienda.html">Tienda</a><a href="index.html#nosotros">Nuestra esencia</a><a href="index.html#contacto">Contacto</a>
+    </nav>
+    <a class="bag-link" href="carrito.html" aria-label="Ver carrito">BOLSA <span id="contador-bolsa">0</span></a>
+  </header>
+
+  <!-- Portada: bienvenida de marca y enlace a la tienda independiente. -->
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">JOYAS CON HISTORIA · DESDE COLOMBIA</p>
+        <h1>El brillo de lo<br><em>que permanece.</em></h1>
+        <p class="hero-description">Piezas que celebran tu esencia. Descubre una selección atemporal en oro y plata, hecha para acompañarte siempre.</p>
+        <a class="button button-gold" href="tienda.html">Entrar a la tienda <span>↗</span></a>
+        <div class="hero-note"><span class="note-line"></span> DISEÑOS QUE HABLAN DE TI</div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Joyas doradas de diseño elegante">
+          <div class="image-caption">COLECCIÓN ESENCIA <span>01 / 04</span></div>
+        </div>
+        <div class="hero-seal">HECHO<br>PARA<br>PERDURAR</div>
+      </div>
+      <div class="hero-index">01 — 04</div>
+    </section>
+
+    <section class="trust-strip" aria-label="Beneficios">
+      <span>✦ CALIDAD SELECCIONADA</span><span>✦ ENVÍOS NACIONALES</span><span>✦ EMPAQUE PARA REGALO</span><span>✦ ASESORÍA PERSONALIZADA</span>
+    </section>
+
+    <!-- Historia y contacto pertenecen a la portada, no al catálogo. -->
+    <section class="story" id="nosotros">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Detalle de una joya artesanal en tono dorado"></div>
+      <div class="story-copy">
+        <p class="eyebrow">NUESTRA ESENCIA</p>
+        <h2>La belleza está<br>en los <em>detalles.</em></h2>
+        <p>En Tolosá creemos que una joya es más que un accesorio: guarda momentos, acompaña historias y se convierte en parte de quien la lleva.</p>
+        <p>Por eso reunimos piezas con carácter, elegancia y una calidad que se siente desde el primer instante.</p>
+        <a href="tienda.html" class="text-link">Explorar la tienda <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contacto">
+      <p class="eyebrow">UNA NOTA DE ELEGANCIA</p>
+      <h2>Un detalle especial,<br><em>directo a tu mundo.</em></h2>
+      <p>Escríbenos para recibir asesoría personalizada y encontrar esa pieza que estabas buscando.</p>
+      <a class="button button-dark" id="contacto-whatsapp" href="https://wa.me/573000000000" target="_blank" rel="noreferrer">Hablemos por WhatsApp <span>↗</span></a>
+      <small>CAMBIA EL NÚMERO EN configuracion.js POR EL DE TU NEGOCIO</small>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer-brand" href="index.html"><span class="brand-mark">◇</span> TOLOSÁ</a>
+    <p>JOYERÍA Y RELOJERÍA</p>
+    <div class="footer-links"><a href="tienda.html">Tienda</a><a href="index.html#nosotros">Nuestra esencia</a><a href="index.html#contacto">Contacto</a></div>
+    <div class="footer-bottom"><span>© 2026 Tolosá. Todos los derechos reservados.</span><span>HECHO CON ELEGANCIA · COLOMBIA</span></div>
+  </footer>
+  <!-- Accesos rápidos persistentes en las tres vistas del sitio. -->
+  <nav class="floating-actions" aria-label="Accesos rápidos">
+    <a class="floating-action floating-cart" href="carrito.html" aria-label="Abrir carrito"><span aria-hidden="true">🛍</span><span class="floating-cart-count">0</span></a>
+    <a class="floating-action floating-whatsapp" href="https://wa.me/573169106870" target="_blank" rel="noreferrer" aria-label="Escribir por WhatsApp"><img src="../images/whatsapp.svg" alt=""></a>
+  </nav>
+  <script type="module" src="../js/inicio.js"></script>
+</body>
+</html>
+

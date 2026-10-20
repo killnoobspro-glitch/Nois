@@ -1,0 +1,109 @@
+/* 1. Variables de color y tipografía */
+:root {
+  --ink:#181714;
+  --muted:#77736b;
+  --gold:#b49452;
+  --gold-light:#ddc78d;
+  --cream:#f7f5f0;
+  --line:#e8e4dc;
+  --white:#fff;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'DM Sans',Arial,sans-serif
+}
+/* 2. Estilos base y controles */
+* {
+  box-sizing:border-box
+}
+html {
+  scroll-behavior:smooth
+}
+body {
+  margin:0;
+  color:var(--ink);
+  font-family:var(--sans);
+  background:#fff
+}
+a {
+  color:inherit;
+  text-decoration:none
+}
+button,input,select {
+  font:inherit
+}
+/* 3. Aviso superior y navegación */
+.announcement {
+  height:32px;
+  background:var(--ink);
+  color:#eee9dd;
+  text-align:center;
+  font-size:9px;
+  letter-spacing:.18em;
+  padding:9px
+}
+.announcement span {
+  color:var(--gold-light);
+  padding:0 9px
+}
+.site-header {
+  height:92px;
+  padding:0 7.2%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #efede8;
+  position:relative;
+  z-index:5;
+  background:#fff
+}
+.brand {
+  display:grid;
+  grid-template-columns:auto auto;
+  align-items:center;
+  column-gap:5px;
+  line-height:1
+}
+.brand-mark {
+  font-size:21px;
+  color:var(--gold);
+  grid-row:span 2
+}
+.brand-name {
+  font-family:var(--serif);
+  font-size:28px;
+  letter-spacing:.11em
+}
+.brand-sub {
+  font-size:7px;
+  letter-spacing:.27em;
+  margin-top:5px
+}
+.main-nav {
+  display:flex;
+  gap:39px;
+  font-size:11px;
+  letter-spacing:.04em;
+  color:#56534d
+}
+.main-nav a:hover,.footer-links a:hover {
+  color:var(--gold)
+}
+.bag-link {
+  font-size:9px;
+  letter-spacing:.14em
+}
+.bag-link span {
+  display:inline-grid;
+  place-items:center;
+  margin-left:7px;
+  border:1px solid var(--gold);
+  border-radius:50%;
+  width:21px;
+  height:21px;
+  color:var(--gold)
+}
+.menu-toggle {
+  display:none;
+  background:none;
+  border:0;
+  font-size:20px
+}
